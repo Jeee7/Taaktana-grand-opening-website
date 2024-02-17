@@ -1,25 +1,32 @@
 import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import SplashScreen from './Components/splashScreen';
+import HomeScreen from './Components/Home';
 
 function App() {
+  
+  const [showSplash, setShowSplash] = useState(true);
+
+  const handleOpenInvitation = () => {
+    setShowSplash(false);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        {showSplash ? (
+          <Route 
+            path='/'
+            element={<SplashScreen onOpenInvitation={handleOpenInvitation} /> }
+          /> 
+        ) : (
+          <Route path='/' element={<HomeScreen />} />
+        )}
+      </Routes>
     </div>
   );
-}
+} 
 
 export default App;
