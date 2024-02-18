@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'BeausiteFit-Light';
-    src: url('/home/dann/web-hotel/grand-opening/src/Assets/Font/Beausite font family ok/Beausite_Fit-GrpahicEx.com/Beausite_Fit-GrpahicEx.com/BeausiteFit-Light.otf') format('opentype');
+    src: url('../Font/Beausite\ font\ family\ ok/Beausite_Fit-GrpahicEx.com/Beausite_Fit-GrpahicEx.com/BeausiteFit-Light.otf') format('opentype');
   }
   
 .myBg {
@@ -52,7 +52,17 @@
     /* Center text horizontally */
     color: white;
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'BeausiteFit-Light', sans-serif;
   }
   
+  @keyframes heartbeat {
+    from {
+      transform: scale(1);
+      border-color: white;
+    }
+    to {
+      transform: scale(1.1);
+      border-color: white;
+    }
+  }
