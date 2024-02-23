@@ -1,3 +1,15 @@
+
+@font-face {
+  font-family: 'BeausiteFit-Light';
+  src: url('../Font/Beausite\ font\ family\ ok/Beausite_Fit-GrpahicEx.com/Beausite_Fit-GrpahicEx.com/BeausiteFit-Light.otf') format('opentype');
+}
+
+
+@font-face {
+  font-family: 'Sofia Pro Light';
+  src: url('../Font/Sofia_Pro-font-family\ ok/Sofia_Pro-font-family/Sofia Pro Light.otf') format('opentype');
+}
+
 .schedule-container {
     height: 100vh;
     display: flex;
@@ -7,6 +19,12 @@
     background-size: cover;
     background-position: center;
     padding-bottom: 0;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease; /* Transition effect */
+}
+
+.schedule-container.show {
+  opacity: 1; /* Show when the 'show' class is applied */
 }
 
 .schedule-container::before {
@@ -17,7 +35,7 @@
 
 
   .schedule-con {
-    position: absolute;
+    position: relative;
     background-color: rgba(0, 0, 0, 0.5);
     max-width: 600px;
     width: 100%; /* Ensure full width */
@@ -28,4 +46,23 @@
     font-family: 'BeausiteFit-Light', sans-serif;
     padding-top: 7em;
     padding-bottom: 2em;
+}
+.text-invite {
+  color: white;
+  font-family: 'Sofia Pro Light', sans-serif;
+  font-size: x-large;
+  padding-top: 2em;
+}
+
+.text-go {
+  font-size: xx-large;
+}
+
+
+.text-tgl {
+  font-size: xx-large;
+}
+
+.text-txt {
+  font-size: smaller;
 }
