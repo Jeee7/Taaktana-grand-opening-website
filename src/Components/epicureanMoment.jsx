@@ -2,15 +2,16 @@ import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import "../Assets/Style/epicureanMoment.css";
 import textChef from "../Assets/Img/text-chef.png";
+import GalaCelebration from "./galaCelebration";
 
 const EpicureanMoment = () => {
   const [showChef, setshowChef] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const scheduleContainer = document.getElementById("chef-container");
-      if (scheduleContainer) {
-        const rect = scheduleContainer.getBoundingClientRect();
+      const chefContainer = document.getElementById("chef-container");
+      if (chefContainer) {
+        const rect = chefContainer.getBoundingClientRect();
         const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
         setshowChef(isVisible);
       }
@@ -32,6 +33,7 @@ const EpicureanMoment = () => {
             </Container>
             </div>
       </Container>
+      <GalaCelebration />
     </div>
   );
 };
