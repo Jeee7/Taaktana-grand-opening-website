@@ -26,6 +26,12 @@
   max-width: 100%; /* Ensure the image fills the container */
   height: auto;
   filter: invert(100%);
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+.text-image.show {
+  opacity: 1;
 }
 
 .text-pg1 {

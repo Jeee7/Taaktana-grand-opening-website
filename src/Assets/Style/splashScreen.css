@@ -28,10 +28,14 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url('../Img/splashImage.jpg'); /* Specify the path to your image */
+    /* background-image: url('../Img/pgSplash.png'); Specify the path to your image */
     background-size: cover; /* Cover the entire container */
     background-position: center; /* Center the background image */
     filter: brightness(50%); /* Adjust as needed */
+  }
+
+  .textSplash {
+    font-size: small;
   }
   
 .splash-screen .container {
@@ -47,6 +51,19 @@
     z-index: 1; /* Ensure content is above the pseudo-element */
   }
   
+.textSplash {
+  width: 30%;
+  display: block;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .splash-screen h1,
 .splash-screen button {
     /* Center text horizontally */

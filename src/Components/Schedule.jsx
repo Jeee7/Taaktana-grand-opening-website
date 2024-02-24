@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import "../Assets/Style/Schedule.css";
-import taaktana from "../Assets/Img/whiteTaaktana.png";
-import luxury from "../Assets/Img/luxury.png";
 import EpicureanMoment from "./epicureanMoment";
 import text2 from "../Assets/Img/txt-2.png";
 
@@ -25,13 +23,21 @@ const Schedule = () => {
     };
   }, []);
 
+  const [showText, setShowText] = useState(false);
+
+  // Function to handle the transition
+  const handleTransition = () => {
+    setShowText(true);
+  };
+
   return (
     <div>
       <Container fluid className={`schedule-container ${showSchedule ? 'show' : ''}`} id="schedule-container">
         <div className="schedule-con">
           <Container fluid>
 
-            <img src={text2} alt="" className="text-image"/>
+            <img src={text2} alt="" className={`text-schedule ${showText ? "show" : ""}`}
+              onLoad={handleTransition} />
 
           </Container>
         </div>
