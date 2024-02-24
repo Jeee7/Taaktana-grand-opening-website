@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import "../Assets/Style/galaCelebration.css";
 import textgalaCelebration from "../Assets/Img/txt-3.png";
 import DressCode from "./dressCode";
+import Departure from "./departure";
 
 const GalaCelebration = () => {
   const [showgalaCelebration, setshowgalaCelebration] = useState(false);
@@ -33,7 +34,7 @@ const GalaCelebration = () => {
             </Container>
             </div>
       </Container>
-      <DressCode />
+      <Departure />
     </div>
   );
 };

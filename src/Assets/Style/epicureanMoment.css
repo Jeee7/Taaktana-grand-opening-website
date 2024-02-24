@@ -15,16 +15,18 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: url('../Img/chef.jpg');
+      background-image: url('../Img/Page\ 04\ -\ Background.png');
       background-size: cover;
       background-position: center;
       padding-bottom: 0;
       opacity: 0; /* Initially hidden */
       transition: opacity 0.5s ease; /* Transition effect */
+      width: 25%;
+      margin: 0 auto;
   }
 
   .chef-container.show {
-    opacity: 1; /* Show when the 'show' class is applied */
+    opacity: 1;
   }
   
   .chef-container::before {
@@ -34,13 +36,6 @@
     }
 
   
-    .chef-con {
-      position: relative;
-      background-color: rgba(0, 0, 0, 0.5);
-      max-width: 600px;
-      width: 100%; /* Ensure full width */
-      box-sizing: border-box; 
-    }
   .text-pg2 {
       color: white;
       font-family: 'BeausiteFit-Light', sans-serif;
@@ -71,6 +66,21 @@
 .text-image {
     max-width: 100%;
     height: auto;
-    filter: invert(100%);
   }
   
+.resize-chef {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 767px) {
+    .chef-container {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .chef-con {
+      width: 90%;
+    }
+  
+  }

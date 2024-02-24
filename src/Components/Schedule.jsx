@@ -30,12 +30,6 @@ const Schedule = () => {
       <Container fluid className={`schedule-container ${showSchedule ? 'show' : ''}`} id="schedule-container">
         <div className="schedule-con">
           <Container fluid>
-            {/* <p className="text-invite">YOU ARE CORDIALLY INVITED TO THE <br /> <br /> <span className="text-go"> GRAND OPENING OF  </span> </p>
-            <img src={taaktana} alt="" style={{ width: "30%", maxWidth: "200px", height: "auto", paddingBottom: "4em" }} />
-            <p className="text-invite"><span className="text-tgl">24 - 26<br /> MARCH 2024 </span>  </p>
-            <p className="text-invite"><span className="text-tgl"> TA'AKTANA </span><br /> <span className="text-txt">A LUXURY COLLECTION RESORT & SPA, LABUAN BAJO <br />
-              PANTAI WAE RANA, NUSA TENGGARA TIMUR, INDONESIA<br /> </span> </p>
-            <img src={luxury} alt="" style={{ width: "20%", maxWidth: "200px", height: "auto", filter: 'invert(100%)', marginBottom: "2em" }} /> */}
 
             <img src={text2} alt="" className="text-image"/>
 

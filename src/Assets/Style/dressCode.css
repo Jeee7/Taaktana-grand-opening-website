@@ -18,7 +18,6 @@
       /* background-image: url('../Img/page\ 5-9.jpg'); */
       background-size: cover;
       background-position: center;
-      padding-bottom: 4em;
       opacity: 0; /* Initially hidden */
       transition: opacity 0.5s ease; /* Transition effect */
   }
@@ -45,7 +44,6 @@
   .text-pg2 {
       color: white;
       font-family: 'BeausiteFit-Light', sans-serif;
-      padding-top: 7em;
       padding-bottom: 2em;
   }
   .text-invite {
@@ -71,7 +69,7 @@
   
 
 .text-dress {
-    max-width: 29%;
+    width: 25%;
     height: auto;
   }
 
