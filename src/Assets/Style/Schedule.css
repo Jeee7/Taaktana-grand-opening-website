@@ -15,12 +15,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../Img/splash.jpg');
+    background-image: url('../Img/Page\ 03\ -\ Background.png');
     background-size: cover;
     background-position: center;
     padding-bottom: 0;
     opacity: 0; /* Initially hidden */
     transition: opacity 0.5s ease; /* Transition effect */
+    width: 25%;
+    margin: 0 auto;
 }
 
 .schedule-container.show {
@@ -37,8 +39,8 @@
   .schedule-con {
     position: relative;
     background-color: rgba(0, 0, 0, 0.5);
-    max-width: 600px;
-    width: 100%; /* Ensure full width */
+    max-width: 500px;
+    width: 80%; /* Ensure full width */
     box-sizing: border-box; 
   }
 .text-pg2 {
@@ -72,4 +74,16 @@
   max-width: 100%;
   height: auto;
   filter: invert(100%);
+}
+
+
+@media (max-width: 767px) {
+  .schedule-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .schedule-con {
+    width: 90%;
+  }
+
 }

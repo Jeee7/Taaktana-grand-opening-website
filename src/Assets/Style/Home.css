@@ -1,90 +1,52 @@
-/* @font-face {
-  font-family: 'Sofia Pro Light';
-  src: url('../Font//Sofia_Pro-font-family\ ok/Sofia_Pro-font-family/Sofia Pro Light.otf') format('opentype');
-} */
-@font-face {
-  font-family: 'BeausiteFit-Light';
-  src: url('../Font/Beausite\ font\ family\ ok/Beausite_Fit-GrpahicEx.com/Beausite_Fit-GrpahicEx.com/BeausiteFit-Light.otf') format('opentype');
+/* Adjust the Home component for mobile screens */
+.pg1-con {
+  height: 100vh;
+  background-image: url('../Img/Page\ 02\ -\ Background.png');
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 0;
+  width: 25%; /* Set the width to 100% for mobile screens */
+  margin: 0 auto;
 }
 
-.test-h1 {
-    background-color: blue;
-    color: red;
-}
 
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 5s ease forwards;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  .pg1-con {
-    height: 100vh;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    background-image: url('../Img/page\ 2-a.jpg');
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 0;
-}
-
-  .pg1-con::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-  .home-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    max-width: 600px;
-    width: 100%; /* Ensure full width */
-    box-sizing: border-box; 
-  }
-
-
-  .text-pg1 {
-    color: white;
-    font-family: 'BeausiteFit-Light', sans-serif;
-    padding-top: 6em;
-    padding-bottom: 6em;
-  }
-
-.tittle-1 {
-  color: white;
-  font-size: x-large;
+.home-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 20%; /* Set the width to 100% for mobile screens */
+  box-sizing: border-box;
+  padding: 20px; /* Adjust padding for spacing */
+  max-width: 500px; /* Set a maximum width for content */
 }
 
 .text-image {
-  max-width: 100%;
+  max-width: 100%; /* Ensure the image fills the container */
   height: auto;
   filter: invert(100%);
 }
 
-
 .text-pg1 {
   color: white;
   font-family: 'BeausiteFit-Light', sans-serif;
-  padding-top: 6em;
-  padding-bottom: 6em;
+  padding-top: 2em; /* Adjust padding for spacing */
+  padding-bottom: 2em; /* Adjust padding for spacing */
 }
 
 .tittle-1 {
   color: white;
   font-size: x-large;
+}
+
+@media (max-width: 767px) {
+  .pg1-con {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .home-container {
+    width: 90%;
+  }
+
 }

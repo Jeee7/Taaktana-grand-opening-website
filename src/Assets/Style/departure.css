@@ -1,0 +1,88 @@
+
+@font-face {
+    font-family: 'BeausiteFit-Light';
+    src: url('../Font/Beausite\ font\ family\ ok/Beausite_Fit-GrpahicEx.com/Beausite_Fit-GrpahicEx.com/BeausiteFit-Light.otf') format('opentype');
+  }
+  
+  
+  @font-face {
+    font-family: 'Sofia Pro Light';
+    src: url('../Font/Sofia_Pro-font-family\ ok/Sofia_Pro-font-family/Sofia Pro Light.otf') format('opentype');
+  }
+  
+  .departure-container {
+    height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('../Img/Page\ 06\ -\ Background.png');
+      background-size: cover;
+      background-position: center;
+      padding-bottom: 0;
+      opacity: 0; /* Initially hidden */
+      transition: opacity 0.5s ease; /* Transition effect */
+      width: 25%;
+      margin: 0 auto;
+  }
+
+  .departure-container.show {
+    opacity: 1; /* Show when the 'show' class is applied */
+  }
+  
+  .departure-container::before {
+      content: '';
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+  
+    .departure-con {
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.5);
+      max-width: 600px;
+      width: 80%; /* Ensure full width */
+      box-sizing: border-box; 
+    }
+  .text-pg2 {
+      color: white;
+      font-family: 'BeausiteFit-Light', sans-serif;
+      padding-top: 7em;
+      padding-bottom: 2em;
+  }
+  .text-invite {
+    color: white;
+    font-family: 'Sofia Pro Light', sans-serif;
+    font-size: x-large;
+    padding-top: 2em;
+  }
+  
+  .text-go {
+    font-size: xx-large;
+  }
+  
+  
+  .text-tgl {
+    font-size: xx-large;
+  }
+  
+  .text-txt {
+    font-size: smaller;
+  }
+
+
+.text-departure {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+@media (max-width: 767px) {
+    .departure-container {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .departure-con {
+      width: 80%;
+    }
+  
+  }
