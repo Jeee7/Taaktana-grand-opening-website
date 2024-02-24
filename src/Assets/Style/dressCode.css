@@ -75,6 +75,6 @@
 
   @media (max-width: 767px) {
     .text-dress {
-        max-width: 100%;
+        width: 100%;
     }
   }
