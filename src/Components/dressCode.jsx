@@ -5,6 +5,7 @@ import dressCodeImg from "../Assets/Img/pg-7-bg.png";
 import dressCodeDress from "../Assets/Img/pg7-content.png";
 import dressCodeMb from "../Assets/Img/pg-7-img.png";
 import GForm from "./gForm";
+import Gallery from "./gallery";
 
 const DressCode = () => {
   const [dressCode, setdressCode] = useState(false);
@@ -38,6 +39,7 @@ const DressCode = () => {
                 <img src={dressCodeMb} alt="" className="text-dress"/>
             </Container>
         </div>
+    <Gallery />
     <GForm />
     </div>
   );

@@ -44,25 +44,6 @@ const GForm = () => {
 
     return (
         <div className="form-container">
-            {/* <h2 className="form-title">Reservation</h2>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="name">Name:</label>
-                <input type="text" id="name" name="name" className="form-input" value={formData.name} onChange={handleChange} required />
-
-                <label htmlFor="whatsapp">WhatsApp:</label>
-                <input type="tel" id="whatsapp" name="whatsapp" className="form-input" value={formData.whatsapp} onChange={handleChange} required />
-
-                <label htmlFor="email">Email:</label>
-                <input type="email" id="email" name="email" className="form-input" value={formData.email} onChange={handleChange} required />
-
-                <label htmlFor="arrival">Arrival flight details:</label>
-                <input type="text" id="arrival" name="arrival" className="form-input" value={formData.arrival} onChange={handleChange} />
-
-                <label htmlFor="departure">Departure flight details:</label>
-                <input type="text" id="departure" name="departure" className="form-input" value={formData.departure} onChange={handleChange} />
-
-                <button type="submit" className="form-submit">Submit</button>
-            </form> */}
             <iframe
         src={googleFormLink}
         title="Reservation Form"
