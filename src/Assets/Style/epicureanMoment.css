@@ -29,12 +29,6 @@
     opacity: 1;
   }
   
-  .chef-container::before {
-      content: '';
-      position: absolute;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-
   
   .text-pg2 {
       color: white;
@@ -70,6 +64,7 @@
   
 .resize-chef {
     max-width: 100%;
+    width: 100%;
     height: auto;
 }
 

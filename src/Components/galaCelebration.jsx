@@ -30,7 +30,7 @@ const GalaCelebration = () => {
         
             <div className="galaCelebration-con">
             <Container fluid>
-                <img src={textgalaCelebration} alt="" className="text-image"/>
+                <img src={textgalaCelebration} alt="" className="text-gala"/>
             </Container>
             </div>
       </Container>

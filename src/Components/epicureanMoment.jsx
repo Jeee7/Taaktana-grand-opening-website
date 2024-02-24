@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import "../Assets/Style/epicureanMoment.css";
-import textChef from "../Assets/Img/Page 04 - Content.png";
+import textChef from "../Assets/Img/pg4.png";
 import GalaCelebration from "./galaCelebration";
 
 const EpicureanMoment = () => {
@@ -26,12 +26,7 @@ const EpicureanMoment = () => {
   return (
     <div>
       <Container fluid className={`chef-container ${showChef ? 'show' : ''}`} id="chef-container">
-        
-            <div>
-            <Container fluid>
-                <img src={textChef} alt="" className="resize-chef"/>
-            </Container>
-            </div>
+            <img src={textChef} alt="" className="resize-chef"/>
       </Container>
       <GalaCelebration />
     </div>

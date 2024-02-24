@@ -70,12 +70,18 @@
 }
 
 
-.text-image {
+.text-schedule {
   max-width: 100%;
   height: auto;
   filter: invert(100%);
+  opacity: 0;
+  transition: opacity 5s ease-in;
 }
 
+
+.text-schedule.show {
+  opacity: 1;
+}
 
 @media (max-width: 767px) {
   .schedule-container {
