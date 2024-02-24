@@ -1,20 +1,15 @@
 /* AudioPlayer.css */
 .audio-button {
-    background-color: #007bff; /* Bootstrap's primary color */
-    color: #fff; /* White text */
-    padding: 1rem 2rem; /* Increased padding */
-    border: none; /* No border */
-    border-radius: 0.5rem; /* Rounded corners */
-    cursor: pointer; /* Cursor on hover */
-    font-size: 1.25rem; /* Increased font size */
-    position: sticky; /* Position sticky */
-    top: 10px; /* Adjust as needed */
+    position: sticky; /* Keep the position sticky */
+    bottom: 20px; /* Adjust the distance from the bottom */
+    right: 20px; /* Adjust the distance from the right */
     z-index: 999; /* Ensure it's on top of everything */
+    /* background-color: white; */
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
   }
   
-  .audio-button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-  }
+  
   
   .audio-player-container.sticky {
     position: fixed;

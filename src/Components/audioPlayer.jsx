@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import MusicFile from "../Assets/Music/Music-Website.mp3";
 import '../Assets/Style/audioPlayer.css'
+import MusicImage from "../Assets/Img/audio-icon.png"
 
 const AudioPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -44,9 +45,12 @@ const AudioPlayer = () => {
 
   return (
     <div className="audio-player-container"> {/* Add this container */}
-      <button className="audio-button" onClick={togglePlayback}>
-        {isPlaying ? "Pause Music" : "Play Music"}
-      </button>
+      <img
+        src={MusicImage}
+       
+        className="audio-button"
+        onClick={togglePlayback}
+    />
     </div>
   );
 };
