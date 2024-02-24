@@ -7,7 +7,6 @@ import textD from "../Assets/Img/pg-2-content.png";
 import AudioPlayer from "./audioPlayer";
 
 const Home = () => {
-  
   const [showText, setShowText] = useState(false);
 
   // Function to handle the transition

@@ -25,7 +25,13 @@ const AudioPlayer = () => {
     };
   }, []);
 
+
   const audioRef = useRef(new Audio(MusicFile));
+
+  useEffect(() => {
+    audioRef.current.play();
+    setIsPlaying(true);
+  }, []);
 
   const togglePlayback = () => {
     if (isPlaying) {
