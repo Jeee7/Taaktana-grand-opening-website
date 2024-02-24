@@ -18,7 +18,7 @@
       /* background-image: url('../Img/page\ 5-9.jpg'); */
       background-size: cover;
       background-position: center;
-      padding-bottom: 0;
+      padding-bottom: 4em;
       opacity: 0; /* Initially hidden */
       transition: opacity 0.5s ease; /* Transition effect */
   }
@@ -71,6 +71,12 @@
   
 
 .text-dress {
-    max-width: 100%;
+    max-width: 29%;
     height: auto;
+  }
+
+  @media (max-width: 767px) {
+    .text-dress {
+        max-width: 100%;
+    }
   }
