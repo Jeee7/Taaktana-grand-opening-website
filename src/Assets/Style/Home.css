@@ -9,6 +9,13 @@
   margin: 0 auto;
 }
 
+.audio-player-container {
+  position: absolute;
+  bottom: 20px; /* Adjust vertical position */
+  right: 20px; /* Adjust horizontal position */
+  z-index: 999; /* Ensure it's on top of everything */
+}
+
 
 .home-container {
   position: absolute;

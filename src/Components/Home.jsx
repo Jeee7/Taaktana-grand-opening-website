@@ -3,9 +3,11 @@ import { Container } from "react-bootstrap";
 import "../Assets/Style/Home.css";
 import Schedule from "./Schedule";
 import text1 from "../Assets/Img/txt-1.png";
-import textD from "../Assets/Img/pg-2-content.png"
+import textD from "../Assets/Img/pg-2-content.png";
+import AudioPlayer from "./audioPlayer";
 
 const Home = () => {
+  
   const [showText, setShowText] = useState(false);
 
   // Function to handle the transition
@@ -15,6 +17,7 @@ const Home = () => {
 
   return (
         <div className="fade-in">
+        <AudioPlayer />
           <div className="desktop-v-mobile">
             <Container fluid className="pg1-con" >
               <div className="home-container">
@@ -36,7 +39,6 @@ const Home = () => {
               </div>
             </Container>
           </div>
-         
           <Schedule />
         </div>
   );
