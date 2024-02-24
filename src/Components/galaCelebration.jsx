@@ -4,6 +4,7 @@ import "../Assets/Style/galaCelebration.css";
 import textgalaCelebration from "../Assets/Img/txt-3.png";
 import DressCode from "./dressCode";
 import Departure from "./departure";
+import textGalaBg from "../Assets/Img/pg5-content.png";
 
 const GalaCelebration = () => {
   const [showgalaCelebration, setshowgalaCelebration] = useState(false);
@@ -26,14 +27,24 @@ const GalaCelebration = () => {
 
   return (
     <div>
-      <Container fluid className={`galaCelebration-container ${showgalaCelebration ? 'show' : ''}`} id="galaCelebration-container">
-        
-            <div className="galaCelebration-con">
-            <Container fluid>
-                <img src={textgalaCelebration} alt="" className="text-gala"/>
+        <div className="desktop-view-gala">
+            <Container fluid className={`galaCelebration-container ${showgalaCelebration ? 'show' : ''}`} id="galaCelebration-container">
+                <div className="galaCelebration-con">
+                    <Container fluid>
+                        <img src={textGalaBg} alt="" className="text-gala"/>
+                    </Container>
+                </div>
             </Container>
-            </div>
-      </Container>
+        </div>
+        <div className="mobile-view-gala">
+            <Container fluid className={`galaCelebration-container ${showgalaCelebration ? 'show' : ''}`} id="galaCelebration-container">
+                <div className="galaCelebration-con">
+                    <Container fluid>
+                        <img src={textgalaCelebration} alt="" className="text-gala"/>
+                    </Container>
+                </div>
+            </Container>
+        </div>
       <Departure />
     </div>
   );

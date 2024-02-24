@@ -3,25 +3,9 @@ import { Container } from "react-bootstrap";
 import "../Assets/Style/Schedule.css";
 import EpicureanMoment from "./epicureanMoment";
 import text2 from "../Assets/Img/txt-2.png";
+import textD from "../Assets/Img/pg-3-content.png"
 
 const Schedule = () => {
-  const [showSchedule, setShowSchedule] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scheduleContainer = document.getElementById("schedule-container");
-      if (scheduleContainer) {
-        const rect = scheduleContainer.getBoundingClientRect();
-        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
-        setShowSchedule(isVisible);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const [showText, setShowText] = useState(false);
 
@@ -32,16 +16,27 @@ const Schedule = () => {
 
   return (
     <div>
-      <Container fluid className={`schedule-container ${showSchedule ? 'show' : ''}`} id="schedule-container">
+      <div className="mobile-schedule">
+      <Container fluid className="schedule-container">
         <div className="schedule-con">
           <Container fluid>
-
             <img src={text2} alt="" className={`text-schedule ${showText ? "show" : ""}`}
               onLoad={handleTransition} />
-
           </Container>
         </div>
       </Container>
+      </div>
+      <div className="desktop-schedule">
+      <Container fluid className="schedule-container">
+        <div className="schedule-con">
+          <Container fluid>
+            <img src={textD} alt="" className={`text-schedule ${showText ? "show" : ""}`}
+              onLoad={handleTransition} />
+          </Container>
+        </div>
+      </Container>
+      </div>
+      
       <EpicureanMoment />
     </div>
   );

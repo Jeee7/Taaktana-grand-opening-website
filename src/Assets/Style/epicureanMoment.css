@@ -15,20 +15,20 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: url('../Img/Page\ 04\ -\ Background.png');
+      background-image: url('../Img/pg-4-bg.png');
       background-size: cover;
       background-position: center;
       padding-bottom: 0;
-      opacity: 0; /* Initially hidden */
+      opacity: 1; /* Initially hidden */
       transition: opacity 0.5s ease; /* Transition effect */
-      width: 25%;
+      width: 100%;
       margin: 0 auto;
   }
 
-  .chef-container.show {
-    opacity: 1;
+  .chef-mobile {
+    visibility: hidden;
+    display: none;
   }
-  
   
   .text-pg2 {
       color: white;
@@ -36,6 +36,7 @@
       padding-top: 7em;
       padding-bottom: 2em;
   }
+
   .text-invite {
     color: white;
     font-family: 'Sofia Pro Light', sans-serif;
@@ -63,8 +64,7 @@
   }
   
 .resize-chef {
-    max-width: 100%;
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
@@ -72,10 +72,24 @@
 @media (max-width: 767px) {
     .chef-container {
       width: 100%;
-      margin: 0 auto;
+      background-image: url('../Img/pg-4-mb.png');
     }
     .chef-con {
-      width: 90%;
+      width: 100%;
+    }
+
+    .resize-chef {
+        width: 100%;
+    }
+
+    .chef-mobile {
+        visibility: visible;
+        display: block;
+    }
+
+    .desktop-chef {
+        visibility: hidden;
+        display: none;
     }
   
   }

@@ -15,13 +15,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: url('../Img/Page\ 05\ -\ Background.png');
+      background-image: url('../Img/pg5.png');
       background-size: cover;
       background-position: center;
       padding-bottom: 0;
       opacity: 0; /* Initially hidden */
       transition: opacity 0.5s ease; /* Transition effect */
-      width: 25%;
+      width: 100%;
       margin: 0 auto;
   }
 
@@ -38,8 +38,7 @@
   
     .galaCelebration-con {
       position: relative;
-      background-color: rgba(0, 0, 0, 0.5);
-      max-width: 600px;
+      /* background-color: rgba(0, 0, 0, 0.5); */
       width: 80%; /* Ensure full width */
       box-sizing: border-box; 
     }
@@ -71,19 +70,38 @@
 
 
 .text-gala {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    filter: invert(100%);
   }
+
+.mobile-view-gala {
+    visibility: hidden;
+    display: none;
+}
   
 
 @media (max-width: 767px) {
     .galaCelebration-container {
       width: 100%;
       margin: 0 auto;
+      background-image:url('../Img/pg5-mb.png') ;
     }
     .galaCelebration-con {
       width: 80%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .text-gala {
+        width: 100%;
+        filter: invert(100%);
+    }
+    .mobile-view-gala {
+        visibility: visible;
+        display: block;
+    }
+    .desktop-view-gala {
+        visibility: hidden;
+        display: none;
     }
   
   }
