@@ -1,12 +1,19 @@
 /* Adjust the Home component for mobile screens */
 .pg1-con {
   height: 100vh;
-  background-image: url('../Img/Page\ 02\ -\ Background.png');
+  background-image: url('../Img/pg-2-d.jpeg');
   background-size: cover;
   background-position: center;
   padding-bottom: 0;
-  width: 25%; /* Set the width to 100% for mobile screens */
+  width: 100%; /* Set the width to 100% for mobile screens */
   margin: 0 auto;
+}
+
+.audio-player-container {
+  position: absolute;
+  bottom: 20px; /* Adjust vertical position */
+  right: 20px; /* Adjust horizontal position */
+  z-index: 999; /* Ensure it's on top of everything */
 }
 
 
@@ -15,19 +22,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 20%; /* Set the width to 100% for mobile screens */
+  width: 80%; /* Set the width to 100% for mobile screens */
   box-sizing: border-box;
   padding: 20px; /* Adjust padding for spacing */
-  max-width: 500px; /* Set a maximum width for content */
 }
 
 .text-image {
-  max-width: 100%; /* Ensure the image fills the container */
+  width: 100%;
   height: auto;
-  filter: invert(100%);
   opacity: 0;
-  transition: opacity 3s ease-in-out;
+  transition: opacity 5s ease-in-out;
 }
 
 .text-image.show {
@@ -46,13 +50,34 @@
   font-size: x-large;
 }
 
+.desktop-v-mobile {
+  display: none;
+  visibility: hidden;
+}
+
 @media (max-width: 767px) {
   .pg1-con {
     width: 100%;
     margin: 0 auto;
+    background-image: url('../Img/pg-2-mb.png');
   }
   .home-container {
     width: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .desktop-v-mobile {
+    visibility: visible;
+    display: block;
+  }
+
+  .text-image {
+    filter: invert(100%);
+  }
+
+  .desktop-v {
+    visibility: hidden;
+    display: none;
   }
 
 }

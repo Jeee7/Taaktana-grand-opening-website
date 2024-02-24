@@ -66,15 +66,35 @@
     font-size: smaller;
   }
 
-  
-
-.text-dress {
-    width: 25%;
-    height: auto;
+  .mobile-dress {
+    visibility: hidden;
+    display: none;
   }
 
+  
+
+  .text-dress {
+    width: 100%;
+    height: auto;
+    
+  }
+  .text-content-dress {
+    position: absolute;
+    }
+
+  
   @media (max-width: 767px) {
     .text-dress {
         width: 100%;
+    }
+
+    .desktop-dress {
+      visibility: hidden;
+      display: none;
+    }
+
+    .mobile-dress {
+      visibility: visible;
+      display: block;
     }
   }

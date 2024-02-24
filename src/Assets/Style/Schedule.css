@@ -15,13 +15,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../Img/Page\ 03\ -\ Background.png');
+    background-image: url('../Img/pg-3.jpeg');
     background-size: cover;
     background-position: center;
     padding-bottom: 0;
-    opacity: 0; /* Initially hidden */
+    opacity: 1; /* Initially hidden */
     transition: opacity 0.5s ease; /* Transition effect */
-    width: 25%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -38,9 +38,8 @@
 
   .schedule-con {
     position: relative;
-    background-color: rgba(0, 0, 0, 0.5);
-    max-width: 500px;
-    width: 80%; /* Ensure full width */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    width: 100%; /* Ensure full width */
     box-sizing: border-box; 
   }
 .text-pg2 {
@@ -71,9 +70,10 @@
 
 
 .text-schedule {
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
-  filter: invert(100%);
+  /* filter: invert(100%); */
+  width: 80%;
   opacity: 0;
   transition: opacity 5s ease-in;
 }
@@ -83,13 +83,37 @@
   opacity: 1;
 }
 
+.mobile-schedule {
+  visibility: hidden;
+  display: none;
+}
+
 @media (max-width: 767px) {
   .schedule-container {
     width: 100%;
     margin: 0 auto;
+    background-image: url('../Img/pg-3-mb.png');
+  }
+
+  .text-schedule {
+    filter: invert(100%);
   }
   .schedule-con {
     width: 90%;
+  }
+
+  .schedule-con {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .mobile-schedule {
+    visibility: visible;
+    display: block;
+  }
+
+  .desktop-schedule {
+    visibility: hidden;
+    display: none;
   }
 
 }

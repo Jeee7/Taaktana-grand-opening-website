@@ -1,33 +1,33 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import "../Assets/Style/epicureanMoment.css";
-import textChef from "../Assets/Img/pg4.png";
+import textChef from "../Assets/Img/pg-4-content.png";
 import GalaCelebration from "./galaCelebration";
+import textMobile from "../Assets/Img/pg4.png"
 
 const EpicureanMoment = () => {
-  const [showChef, setshowChef] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const chefContainer = document.getElementById("chef-container");
-      if (chefContainer) {
-        const rect = chefContainer.getBoundingClientRect();
-        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
-        setshowChef(isVisible);
-      }
-    };
+  const [showText, setShowText] = useState(false);
 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  // Function to handle the transition
+  const handleTransition = () => {
+    setShowText(true);
+  };
 
   return (
     <div>
-      <Container fluid className={`chef-container ${showChef ? 'show' : ''}`} id="chef-container">
-            <img src={textChef} alt="" className="resize-chef"/>
-      </Container>
+        <div className="desktop-chef">
+            <Container fluid className="chef-container">
+                <img src={textChef} alt="" className={`resize-chef ${showText ? "show" : ""}`} onLoad={handleTransition}/>
+            </Container>
+        </div>
+
+        <div className="chef-mobile">
+            <Container fluid className="chef-container">
+                <img src={textMobile} alt="" className={`resize-chef ${showText ? "show" : ""}`} onLoad={handleTransition}/>/
+            </Container>
+        </div>
+      
       <GalaCelebration />
     </div>
   );
