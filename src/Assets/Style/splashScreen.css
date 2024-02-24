@@ -3,14 +3,11 @@
     src: url('../Font/Beausite\ font\ family\ ok/Beausite_Fit-GrpahicEx.com/Beausite_Fit-GrpahicEx.com/BeausiteFit-Light.otf') format('opentype');
   }
   
-.myBg {
-    display: flex;
-    background-color: #527a6f !important;
-    color: #ebe4da;
-    text-align: center;
-    justify-content: center;
+  .mobile-splash {
+    visibility: hidden;
+    display: none;
   }
-  
+
 .splash-screen {
     /* Make the splash screen full height of the viewport */
     height: 100vh;
@@ -28,10 +25,10 @@
     right: 0;
     bottom: 0;
     left: 0;
-    /* background-image: url('../Img/pgSplash.png'); Specify the path to your image */
+    background-image: url('../Img/splash.jpeg'); 
     background-size: cover; /* Cover the entire container */
     background-position: center; /* Center the background image */
-    filter: brightness(50%); /* Adjust as needed */
+    /* filter: brightness(50%);  */
   }
 
   .textSplash {
@@ -90,5 +87,14 @@
     }
     .text-splash{
       font-size: large !important;
+      color: white;
+    }
+    .mobile-splash{
+      visibility: visible;
+      display: block;
+    }
+    .splash-screen {
+      visibility: hidden;
+      display: none;
     }
   }
