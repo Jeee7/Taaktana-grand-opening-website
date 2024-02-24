@@ -83,3 +83,12 @@
       border-color: white;
     }
   }
+  @media (max-width: 767px) {
+    .textSplash{
+      width: 100%;
+      height: auto;
+    }
+    .text-splash{
+      font-size: large !important;
+    }
+  }
