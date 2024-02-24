@@ -67,4 +67,10 @@
     font-size: smaller;
   }
 
+
+.text-image {
+    max-width: 100%;
+    height: auto;
+    filter: invert(100%);
+  }
   

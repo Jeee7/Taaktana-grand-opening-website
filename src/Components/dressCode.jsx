@@ -26,7 +26,7 @@ const DressCode = () => {
   return (
     <div>
       <Container fluid className={`dressCode-container ${dressCode ? 'show' : ''}`} id="dressCode-container">
-            <img src={dressCodeImg} alt="" style={{  maxWidth: "550px", height: "auto",  display: 'inline' }} />
+            <img src={dressCodeImg} alt="" className="text-dress"/>
       </Container>
     <GForm />
     </div>

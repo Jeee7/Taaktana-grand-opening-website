@@ -29,7 +29,7 @@ const EpicureanMoment = () => {
         
             <div className="chef-con">
             <Container fluid>
-                <img src={textChef} alt="" style={{  maxWidth: "550px", height: "auto", filter: 'invert(100%)',  display: 'inline' }} />
+                <img src={textChef} alt="" className="text-image"/>
             </Container>
             </div>
       </Container>

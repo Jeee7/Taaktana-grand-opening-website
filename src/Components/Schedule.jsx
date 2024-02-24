@@ -37,7 +37,7 @@ const Schedule = () => {
               PANTAI WAE RANA, NUSA TENGGARA TIMUR, INDONESIA<br /> </span> </p>
             <img src={luxury} alt="" style={{ width: "20%", maxWidth: "200px", height: "auto", filter: 'invert(100%)', marginBottom: "2em" }} /> */}
 
-            <img src={text2} alt="" style={{  maxWidth: "550px", height: "auto", filter: 'invert(100%)',  display: 'inline' }} />
+            <img src={text2} alt="" className="text-image"/>
 
           </Container>
         </div>
