@@ -29,7 +29,7 @@ const GalaCelebration = () => {
         
             <div className="galaCelebration-con">
             <Container fluid>
-                <img src={textgalaCelebration} alt="" style={{  maxWidth: "550px", height: "auto", filter: 'invert(100%)',  display: 'inline' }} />
+                <img src={textgalaCelebration} alt="" className="text-image"/>
             </Container>
             </div>
       </Container>
