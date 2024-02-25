@@ -47,7 +47,6 @@
       color: white;
       font-family: 'BeausiteFit-Light', sans-serif;
       padding-top: 7em;
-      padding-bottom: 2em;
   }
   .text-invite {
     color: white;
@@ -84,6 +83,7 @@
     .departure-container {
       width: 100%;
       background-image: url('../Img/pg-6-mb.png');
+      padding-bottom: 0;
     }
     .departure-con {
       width: 80%;
@@ -97,6 +97,7 @@
     .mobile-view-departure {
         visibility: visible;
         display: block;
+        
       }
 
     .desktop-view-departure {

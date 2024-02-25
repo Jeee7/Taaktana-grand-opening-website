@@ -36,7 +36,6 @@ const Departure = () => {
                 <img src={departureTextMobile} alt="" className="text-departure"/>
             </Container>
         </div>
-      
         <DressCode />
     </div>
   );

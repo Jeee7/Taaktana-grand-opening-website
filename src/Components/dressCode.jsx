@@ -28,15 +28,16 @@ const DressCode = () => {
 
   return (
     <div>
+       <div className="mobile-dress">
+            <Container fluid className={`dressCode-container ${dressCode ? 'show' : ''}`} id="dressCode-container">
+                <img src={dressCodeMb} alt="" className="text-dress"/>
+            </Container>
+        </div>
+
         <div className="desktop-dress">
             <Container fluid className={`dressCode-container ${dressCode ? 'show' : ''}`} id="dressCode-container">
                 <img src={dressCodeImg} alt="" className="text-dress"/>
                 <img src={dressCodeDress} alt=""  className="text-content-dress"/>
-            </Container>
-        </div>
-        <div className="mobile-dress">
-            <Container fluid className={`dressCode-container ${dressCode ? 'show' : ''}`} id="dressCode-container">
-                <img src={dressCodeMb} alt="" className="text-dress"/>
             </Container>
         </div>
     <Gallery />
