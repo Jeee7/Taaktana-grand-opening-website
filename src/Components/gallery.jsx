@@ -29,7 +29,7 @@ const Gallery = () => {
                 <img className="gallery-images" src={gallery8} alt="" />
                 <img className="gallery-images" src={gallery9} alt=""/>
             </SlideshowLightbox> 
-            <iframe width="120" height="500" src="https://www.youtube.com/embed/TNjUhuSlD84?si=9AXz7XL2RCJ-vkZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="88%" height="500" src="https://www.youtube.com/embed/TNjUhuSlD84?si=9AXz7XL2RCJ-vkZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </Container>
     </div>
   );
