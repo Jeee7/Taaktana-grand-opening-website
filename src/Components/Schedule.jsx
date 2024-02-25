@@ -26,6 +26,7 @@ const Schedule = () => {
         </div>
       </Container>
       </div>
+      
       <div className="desktop-schedule">
       <Container fluid className="schedule-container">
         <div className="schedule-con">
