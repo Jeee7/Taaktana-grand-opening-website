@@ -4,17 +4,24 @@
 .photos-gallery {
     padding-top: 4em;
     padding-bottom: 2em;
+    background-color: white;
 }
 
 .gallery-images {
-    width: 30%;
     padding: 15px;
-    border-radius: 10% ;
-}
+    border-radius: 10%;
+    transition: opacity 0.5s ease-in-out;
 
+}
+.gallery-images:hover {
+    opacity: 0.8;
+  }
+  
 
 @media (max-width: 767px) {
     .gallery-images {
-        width: 50%;
+        border-radius: 20%;
     }
   }
+
+ 
