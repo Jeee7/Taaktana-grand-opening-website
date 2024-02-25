@@ -19,7 +19,15 @@ const Gallery = () => {
     <div className="photos-gallery">
         <Container className="d-flex justify-content-center">
             <SlideshowLightbox className="container grid grid-cols-3 gap-2 mx-auto">
-                <img className="w-full rounded" src={gallery1} />
+                <img className="gallery-images" src={gallery1} alt="" />
+                <img className="gallery-images" src={gallery2} alt="" />
+                <img className="gallery-images" src={gallery3} alt=""/>
+                <img className="gallery-images" src={gallery4} alt="" />
+                <img className="gallery-images" src={gallery5} alt="" />
+                <img className="gallery-images" src={gallery6} alt=""/>
+                <img className="gallery-images" src={gallery7} alt="" />
+                <img className="gallery-images" src={gallery8} alt="" />
+                <img className="gallery-images" src={gallery9} alt=""/>
             </SlideshowLightbox> 
         </Container>
     </div>
