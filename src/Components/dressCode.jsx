@@ -40,7 +40,7 @@ const DressCode = () => {
             </Container>
         </div>
     <Gallery />
-    {/* <GForm /> */}
+    <GForm />
     </div>
   );
 };
