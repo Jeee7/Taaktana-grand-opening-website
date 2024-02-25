@@ -5,3 +5,15 @@
     padding-top: 4em;
     padding-bottom: 2em;
 }
+
+.gallery-images {
+    width: 30%;
+    padding: 15px;
+}
+
+
+@media (max-width: 767px) {
+    .gallery-images {
+        width: 50%;
+    }
+  }
