@@ -62,7 +62,7 @@
     background-image: url('../Img/pg-2-mb.png');
   }
   .home-container {
-    width: 90%;
+    width: 83%;
     background-color: rgba(0, 0, 0, 0.5);
   }
 
@@ -72,6 +72,7 @@
   }
 
   .text-image {
+    width: 100%;
     filter: invert(100%);
   }
 

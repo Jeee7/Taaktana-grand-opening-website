@@ -17,15 +17,18 @@ const EpicureanMoment = () => {
   return (
     <div>
         <div className="desktop-chef">
+          
             <Container fluid className="chef-container">
                 <img src={textChef} alt="" className={`resize-chef ${showText ? "show" : ""}`} onLoad={handleTransition}/>
             </Container>
         </div>
 
         <div className="chef-mobile">
-            <Container fluid className="chef-container">
+          <Container fluid className="chef-container">
+            <div className="chef-con">
                 <img src={textMobile} alt="" className={`resize-chef ${showText ? "show" : ""}`} onLoad={handleTransition}/>/
-            </Container>
+            </div>
+          </Container>
         </div>
       
       <GalaCelebration />

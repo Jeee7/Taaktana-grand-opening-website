@@ -91,15 +91,15 @@
 @media (max-width: 767px) {
   .schedule-container {
     width: 100%;
-    margin: 0 auto;
     background-image: url('../Img/pg-3-mb.png');
   }
 
   .text-schedule {
+    width: 100%;
     filter: invert(100%);
   }
   .schedule-con {
-    width: 90%;
+    width: 80%;
   }
 
   .schedule-con {

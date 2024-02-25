@@ -22,6 +22,10 @@
     .gallery-images {
         border-radius: 20%;
     }
+
+    .photos-gallery {
+        padding-top: 0;
+    }
   }
 
  
