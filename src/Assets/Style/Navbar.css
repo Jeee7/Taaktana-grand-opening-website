@@ -1,0 +1,25 @@
+/* GalleryNavbar.css */
+
+.navbar {
+    background-color: white;
+    color: orange;
+    padding: 1rem;
+    font-family: 'BeausiteFit-Light';
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .navbar-links {
+    margin-left: auto;
+  }
+  
+  .navbar-link {
+    margin-right: 1rem;
+  }
+
+  @font-face {
+    font-family: 'BeausiteFit-Light';
+    src: url('../Font/Beausite\ font\ family\ ok/Beausite_Fit-GrpahicEx.com/Beausite_Fit-GrpahicEx.com/BeausiteFit-Light.otf') format('opentype');
+  }

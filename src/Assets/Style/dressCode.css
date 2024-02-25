@@ -20,6 +20,7 @@
       background-position: center;
       opacity: 0; /* Initially hidden */
       transition: opacity 0.5s ease; /* Transition effect */
+      padding-top: 3em;
   }
 
   .dressCode-container.show {
@@ -71,7 +72,6 @@
     display: none;
   }
 
-  
 
   .text-dress {
     width: 100%;
@@ -79,6 +79,7 @@
     
   }
   .text-content-dress {
+    width: 100%;
     position: absolute;
     }
 
