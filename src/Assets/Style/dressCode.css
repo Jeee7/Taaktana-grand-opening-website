@@ -11,7 +11,7 @@
   }
   
   .dressCode-container {
-    height: 100vh;
+      height: auto;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -20,7 +20,7 @@
       background-position: center;
       opacity: 0; /* Initially hidden */
       transition: opacity 0.5s ease; /* Transition effect */
-      padding-top: 3em;
+      margin: 0 auto;
   }
 
   .dressCode-container.show {
@@ -40,6 +40,7 @@
       max-width: 600px;
       width: 100%; /* Ensure full width */
       box-sizing: border-box; 
+      margin: 0 auto;
       /* background-image: url('../Img/pg-7-img.png'); */
     }
   .text-pg2 {
@@ -51,7 +52,6 @@
     color: white;
     font-family: 'Sofia Pro Light', sans-serif;
     font-size: x-large;
-    padding-top: 2em;
   }
   
   .text-go {
@@ -89,17 +89,21 @@
         width: 100%;
     }
 
-    .dressCode-container {
-      padding-top: 0;
-    }
-
     .desktop-dress {
       visibility: hidden;
       display: none;
     }
 
+    .dressCode-container {
+      width: 100%;
+      margin-top: 0;/* Remove padding */
+      display: flex;
+      height: auto;
+  }
+
     .mobile-dress {
       visibility: visible;
-      display: block;
+      align-items: flex-start;
+      display: flex;
     }
   }
